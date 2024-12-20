@@ -22,7 +22,7 @@ jobs:
 
       - name: Commit and push changes
         run: |
-          git config --local user.email "action@github.com"
+          git config --local user.email "1445600537@qq.com"
           git config --local user.name "GitHub Action"
           git add zhishiku.json
           git commit -m "Update zhishiku.json with latest Notion data" || echo "No changes to commit"
