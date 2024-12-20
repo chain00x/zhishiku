@@ -4,7 +4,10 @@ on:
   schedule:
     - cron: '*/1 * * * *'  # 每分钟执行一次
   workflow_dispatch:  # 允许手动触发
-
+  
+permissions:
+  contents: write  # 允许写入内容
+  
 jobs:
   fetch_notion_data:
     runs-on: ubuntu-latest
